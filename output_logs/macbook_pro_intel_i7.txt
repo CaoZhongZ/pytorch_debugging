@@ -1,0 +1,34 @@
+
+##############################################
+Default Configuration:
+PyTorch Version 1.4.0
+Computation Time = 4.8s 	Memory = 6.921e-02Gb 	 Delta Memory = +3.204e-03Gb
+
+Numpy Version 1.17.3
+Computation Time = 6.1s 	Memory = 6.987e-02Gb 	 Delta Memory = +6.599e-04Gb
+
+
+
+
+##############################################
+MKL_DISABLE_FAST_MM=1:
+PyTorch Version 1.4.0
+Computation Time = 4.6s 	Memory = 6.909e-02Gb 	 Delta Memory = +3.262e-03Gb
+
+Numpy Version 1.17.3
+Computation Time = 6.3s 	Memory = 6.976e-02Gb 	 Delta Memory = +6.714e-04Gb
+
+
+
+
+##############################################
+MKL_DISABLE_FAST_MM=0 & OMP_NUM_THREADS=4:
+PyTorch Version 1.4.0
+Computation Time = 4.4s 	Memory = 6.913e-02Gb 	 Delta Memory = +3.307e-03Gb
+
+Numpy Version 1.17.3
+Computation Time = 6.3s 	Memory = 6.980e-02Gb 	 Delta Memory = +6.676e-04Gb
+
+
+
+

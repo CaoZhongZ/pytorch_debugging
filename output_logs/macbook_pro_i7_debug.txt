@@ -1,0 +1,11 @@
+MKL_VERBOSE Intel(R) MKL 2019.0 Update 4 Product build 20190411 for Intel(R) 64 architecture Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors, OSX 2.70GHz lp64 intel_thread
+MKL_VERBOSE SGEMM_BATCH(N,N,0x7ffee4c4ae58,0x7ffee4c4ae54,0x7ffee4c4ae5c,0x7ffee4c4ae60,0x7fab5bcfbc50,0x7ffee4c4ae68,0x7fab5bc620d0,0x7ffee4c4ae64,0x7ffee4c4ae6c,0x7fab5bcabde0,0x7ffee4c4ae70,0x7ffee4c4ad98,0x7 49.74ms CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:4
+PyTorch Version 1.4.0
+Computation Time = 1.0s 	Memory = 6.937e-02Gb 	 Delta Memory = +3.269e-03Gb
+
+Numpy Version 1.17.3
+Computation Time = 0.00041s 	Memory = 7.001e-02Gb 	 Delta Memory = +6.447e-04Gb
+
+
+
+
