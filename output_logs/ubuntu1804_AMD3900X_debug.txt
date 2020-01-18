@@ -1,0 +1,11 @@
+MKL_VERBOSE Intel(R) MKL 2019.0 Update 4 Product build 20190411 for Intel(R) 64 architecture Intel(R) Architecture processors, Lnx 4.15GHz lp64 gnu_thread
+MKL_VERBOSE SGEMM_BATCH(N,N,0x7ffedb370f08,0x7ffedb370f0c,0x7ffedb370f04,0x7ffedb370f00,0x55f9258867c0,0x7ffedb370ef8,0x55f92579fce0,0x7ffedb370efc,0x7ffedb370ef4,0x55f925734af0,0x7ffedb370ef0,0x7ffedb370db8,0x7 1.41ms CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:12
+PyTorch Version 1.4.0
+Computation Time = 0.16s 	Memory = 1.477e-01Gb 	 Delta Memory = +4.169e-03Gb
+
+Numpy Version 1.18.1
+Computation Time = 0.00015s 	Memory = 1.490e-01Gb 	 Delta Memory = +1.221e-03Gb
+
+
+
+
