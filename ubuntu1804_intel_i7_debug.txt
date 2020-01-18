@@ -1,0 +1,16 @@
+mkl-service + Intel(R) MKL: THREADING LAYER: (null)
+mkl-service + Intel(R) MKL: setting Intel(R) MKL to use INTEL OpenMP runtime
+mkl-service + Intel(R) MKL: preloading libiomp5.so runtime
+MKL_VERBOSE Intel(R) MKL 2019.0 Update 4 Product build 20190411 for Intel(R) 64 architecture Intel(R) Advanced Vector Extensions 2 (Intel(R) AVX2) enabled processors, Lnx 3.60GHz lp64 intel_thread
+MKL_VERBOSE SDOT(2,0x56227ab0a800,1,0x56227ab0a800,1) 10.12us CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:8
+MKL_VERBOSE SGEMM_BATCH(N,N,0x7ffcfd435c68,0x7ffcfd435c6c,0x7ffcfd435c64,0x7ffcfd435c60,0x56227c1c3710,0x7ffcfd435c58,0x56227c0e9fe0,0x7ffcfd435c5c,0x7ffcfd435c54,0x56227c154560,0x7ffcfd435c50,0x7ffcfd435b18,0x7 705.85us CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:8
+MKL_VERBOSE DGEMM(N,N,2,256,256,0x7ffcfd436020,0x56227c260160,2,0x7fd8944c7010,256,0x7ffcfd436028,0x56227c276ee0,2) 337.53us CNR:OFF Dyn:1 FastMM:1 TID:0  NThr:8
+PyTorch Version 1.4.0
+Computation Time = 0.0017s 	Memory = 1.543e-01Gb 	 Delta Memory = +3.483e-03Gb
+
+Numpy Version 1.18.1
+Computation Time = 0.00039s 	Memory = 1.552e-01Gb 	 Delta Memory = +9.384e-04Gb
+
+
+
+
