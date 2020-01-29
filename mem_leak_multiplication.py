@@ -9,7 +9,7 @@ from tqdm import trange
 
 if __name__ == "__main__":
     arg_parser = argparse.ArgumentParser()
-    arg_parser.add_argument("-c", "--iter", type=int, required=False, default=100000)
+    arg_parser.add_argument("-c", "--iter", type=int, required=False, default=10000)
 
     args = arg_parser.parse_args()
     n_samples = args.iter
@@ -18,15 +18,21 @@ if __name__ == "__main__":
     prev_memoryUse = 0.0
 
     py = psutil.Process(pid)
-    init_mem = py.memory_info()[0] / 2. ** 30
+    init_mem = py.memory_info()[0]/1024/1024
     print(f"PyTorch Version {torch.__version__}")
     t0 = time.perf_counter()
     for i in range(n_samples):
-        tmp = torch.matmul(torch.zeros((1, 256, 256)), torch.zeros((1, 256, 2)))
+        # tmp = torch.matmul(torch.zeros((1, 256, 256)), torch.zeros((1, 256, 2)))
+        torch.set_num_threads(2)
+        a = torch.zeros((1, 256, 256))
+        b = torch.zeros((1, 256, 256))
+
+        torch.set_num_threads(128)
+        c = a + b
 
     t_torch = time.perf_counter() - t0
-    memoryUse = py.memory_info()[0] / 2. ** 30
-    print(f"Computation Time = {t_torch:.2}s \tMemory = {memoryUse:.3e}Gb \t Delta Memory = {memoryUse - init_mem:+.3e}Gb")
+    memoryUse = py.memory_info()[0]/1024/1024
+    print(f"Computation Time = {t_torch:.2}s \tMemory = {memoryUse:.3e}Gb \t Delta Memory = {memoryUse - init_mem:}M")
 
     print(f"\nNumpy Version {np.__version__}")
     time.sleep(0.1)
